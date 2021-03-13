@@ -9,13 +9,21 @@ a {
 
 .header {
 	display: grid;
-	grid-template-columns:1fr 5fr 1fr;
+	grid-template-columns:1fr 4fr 1fr;
 	grid-template-rows: 1;
-	
+	height: 750px;
 }
 
 .content {
+	display: grid;
 	grid-column-start: 2;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: 90px 200px 350px;
+	grid-template-areas: 
+	"header-nav header-nav header-nav header-nav header-nav"
+	"header-logo header-title header-title header-title header-lang" 
+	"header-img header-img header-img header-img header-img"
+	;
 }
 
 .header-nav {
@@ -32,24 +40,39 @@ a {
 }
 
 .header-nav {
-	grid-column-start: 2;
 	grid-area: header-nav;
 }
 
 .header-logo {
 	font-size: 45px;
+	line-height: 50px;
 	font-weight: 600;
 	grid-area: header-logo;
+	align-self: center;
 }
 
 .header-title {
 	grid-area: header-title;
+	justify-self: center;
+	align-self: center;
+	line-height: 21px;
 }
 
 .header-lang {
 	grid-area: header-lang;
+	writing-mode: vertical-rl;
+	align-self: center;
 }
 
 .header-img {
+	overflow: hidden;
 	grid-area: header-img;
+	height: 400px;
+}
+
+.header-img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center 45%;
 }

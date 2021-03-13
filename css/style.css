@@ -1,0 +1,55 @@
+body {
+	font-family: 'Khula', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+.header {
+	display: grid;
+	grid-template-columns:1fr 5fr 1fr;
+	grid-template-rows: 1;
+	
+}
+
+.content {
+	grid-column-start: 2;
+}
+
+.header-nav {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #828282;
+	
+}
+
+.header-nav__link {
+	color: #828282;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.header-nav {
+	grid-column-start: 2;
+	grid-area: header-nav;
+}
+
+.header-logo {
+	font-size: 45px;
+	font-weight: 600;
+	grid-area: header-logo;
+}
+
+.header-title {
+	grid-area: header-title;
+}
+
+.header-lang {
+	grid-area: header-lang;
+}
+
+.header-img {
+	grid-area: header-img;
+}

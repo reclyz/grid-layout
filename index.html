@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;@600;700&display=swap" rel="stylesheet"> 
 	<script src="https://kit.fontawesome.com/ecb2d85d03.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/cssreset.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -13,15 +13,22 @@
 <body>
 	<div class="wrapper">
 		<header class="header">
-				<nav class="header-nav">
-					<a href="#" class="header-nav__link">Home</a>
-					<a href="#" class="header-nav__link">About me</a>
-					<a href="#" class="header-nav__link">Skills</a>
-					<a href="#" class="header-nav__link">Portfolio</a>
-					<a href="#" class="header-nav__link">Contacts</a>
-				</nav>
-				<div class="header-bottom">
-					<a href="#" class="header-logo">Andrey <br> Safiev</a>
+			<div class="header__menu">
+				<div class="header__hamburger">
+					<span></span>
+				</div>
+					<nav class="header-nav">
+						<div class="nav__list">
+							<a href="" class="header-nav__link transition">Home</a>
+							<a href="" class="header-nav__link transition">About me</a>
+							<a href="" class="header-nav__link transition">Skills</a>
+							<a href="" class="header-nav__link transition">Portfolio</a>
+							<a href="" class="header-nav__link transition" >Contacts</a>
+						</div>
+					</nav>
+				</div>
+					<div class="header-bottom">
+					<a href="#" class="header-logo transition">Andrey <br> Safiev</a>
 					<h1 class="header-title">UX | UI designer <br> 17 years old, Kemerovo</h1>
 					<div class="header-lang">RUS|ENG</div>
 				</div>
@@ -94,45 +101,49 @@
 				<h1 class="title">Portfolio</h1>
 				<div class="portfolio__item">
 					<div class="portfolio__img"><img src="img/exmpl1.jpg" alt=""></div>
-					<div class="portfolio__body"><p><a href="#">Online fashion store - Homepage</a></p></div>
+					<div class="portfolio__body"><a href="#" class="portfolio__link transition">Online fashion store - Homepage</a></div>
 				</div>
 				<div class="portfolio__item">
 					<div class="portfolio__img"><img src="img/exmpl2.jpg" alt="reebok"></div>
-					<div class="portfolio__body"><p><a href="#">Reebok Store - Concept</a></p></div>
+					<div class="portfolio__body"><a href="#" class="portfolio__link transition">Reebok Store - Concept</a></div>
 				</div>
 				<div class="portfolio__item">
 					<div class="portfolio__img"><img src="img/exmpl3.jpg" alt="braun"></div>
-					<div class="portfolio__body"><p><a href="#">Braun Landing Page - Concept</a></p></div>
+					<div class="portfolio__body"><a href="#" class="portfolio__link transition">Braun Landing Page - Concept</a></div>
 				</div>
 			</div>
 		</section>
-		<footer class="footer">
+		<footer class="footer" id="footer" >
 			<div class="footer-body">
 				<h1 class="title">Contacts</h1>
 				<p>Want to know more or just chat? <br> You are welcome!</p>
-				<a href="" class="footer__btn">Send message</a>
+				<a href="" class="footer__btn transition">Send message</a>
 			</div>
 			<div class="footer-networks">
 				<div class="networks__icons">
 					<div class="icons-item">
-						<img src="img/linkedln.svg" alt="">
+						<a href="https://www.linkedln.com"><img src="img/linkedln.svg" alt=""></a>
 					</div>
 					<div class="icons-item">
-						<img src="img/instagram.svg" alt="">
+						<a href="https://www.instagram.com/"><img src="img/instagram.svg" alt=""></a>
 					</div>
 					<div class="icons-item">
-						<img src="img/behance.svg" alt="">
+						<a href="https://www.behance.net/"><img src="img/behance.svg" alt=""></a>
 					</div>
 					<div class="icons-item">
-						<img src="img/dribble.svg" alt="">
+						<a href="https://dribbble.com/"><img src="img/dribble.svg" alt=""></a>
 					</div>
 				</div>
 				<div class="networks__text">
-					<p>Like me on <br> Linkedln, Instagram, Behance, Dribble</p>
+					<p>Like me on </p>
+					<a href="https://www.linkedln.com/" class="networks__link transition">Linkedln, </a>
+					<a href="https://www.instagram.com/" class="networks__link transition">Instagram, </a>
+					<a href="https://www.behance.net/" class="networks__link transition">Behance, </a>
+					<a href="https://dribbble.com/" class="networks__link transition">Dribble</a>
 				</div>
 			</div>
 		</footer>
 	</div>
-
-</body>
+	<script src="script.js"></script>
+	</body>
 </html>
